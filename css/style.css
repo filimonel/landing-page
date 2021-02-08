@@ -90,12 +90,14 @@ p {
 .c-container {
   background-color: #white;
   height: 435px;
+  max-height: 700px;
 }
 
 .cards {
   display: flex;
   justify-content: space-around;
   align-items: center;
+  flex-shrink: 1;
   margin-top: 30px;
 }
 
@@ -103,8 +105,7 @@ p {
   background-color: white;
   width: 300px;
   height: 350px;
-  box-shadow: 20px 20px 60px #bebebe,
-             -20px -20px 60px #ffffff;
+  box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
   margin-top: 15px;
   margin-bottom: 15px;
   display: flex;
@@ -139,7 +140,12 @@ li {
   display: inline-block;
   color: white;
   padding: 10px;
-  font-size: 24px
+  font-size: 24px;
+  transition: ease 1s;
+}
+
+i {
+  transition: ease 1s;
 }
 
 i:hover {
